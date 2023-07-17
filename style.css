@@ -65,7 +65,7 @@ height: 55px;
 }
 main{
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 70px auto;
 }
 .span{
   color: #FF900E;
@@ -79,6 +79,7 @@ main{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 1.5rem;
+  border-radius: 5px;
 }
 .team-detaile{
    text-align: justify;
@@ -92,6 +93,11 @@ main{
 .quick-list{
   color: gray;
 }
+.team-des{
+  color: gray;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
 /* Responsive media query */
 @media screen and (max-width:576px){
 header{
@@ -100,13 +106,24 @@ header{
 nav {
   flex-direction: column;
 }
+.team-container{
+  flex-direction: column;
+}
+.team-image-container{
+  grid-template-columns: 1fr;
+
+}
+.team-des{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 }
 
 @media screen and (min-width:576px) and (max-width:960px){
   header{
     padding:50px;
   }
-  nav {
+  nav , .team-container{
     flex-direction: column;
   }
 }
